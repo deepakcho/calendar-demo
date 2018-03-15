@@ -180,7 +180,7 @@ var AppCalendarComponent = (function () {
         this.selectedYear = new Date().getFullYear();
         this.days = this.createDayEvents(this.selectedMonth, this.selectedYear);
         this.http.get('https://cdn.rawgit.com/deepakcho/calendar-demo/master/assets/holidays.json').subscribe(function (res) {
-            console.log(res);
+            console.log(res);    
             _this.holidayList = res;
         });
     }
